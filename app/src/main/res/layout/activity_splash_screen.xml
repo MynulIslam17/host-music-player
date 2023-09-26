@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen"
+    android:background="#AACCA3"
+   >
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="OnlIne Music Player"
+        android:textColor="#FFFA71"
+        android:textSize="33sp"
+        android:textStyle="bold"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotti"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:lottie_rawRes="@raw/musicload"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_below="@+id/appName"
+        android:visibility="gone"/>
+
+
+<!--internet  pop up -->
+
+      <LinearLayout
+          android:id="@+id/retry"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="4"
+          android:background="#362819"
+          android:layout_alignParentBottom="true"
+          android:visibility="gone"
+
+
+          >
+
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="55dp"
+              android:text="Check Your Internet Connection"
+              android:layout_weight="3"
+              android:textSize="18sp"
+              android:gravity="center"
+              android:textColor="#FFF"
+              />
+
+          <ImageView
+
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              android:src="@drawable/retry"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              />
+
+
+
+
+
+      </LinearLayout>
+
+
+
+
+</RelativeLayout>
