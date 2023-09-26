@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Music Player with ListView</string>
+    <string name="bannerTop">DashBoard</string>
+</resources>
